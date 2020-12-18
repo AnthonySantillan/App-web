@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Pagina2.Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="~/css/animate.min.css">
+    <!-- Fontawesome Min CSS -->
+    <link rel="stylesheet" href="~/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/plugins/font-awesome.css">
+    <link rel="stylesheet" href="~/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/plugins/simplebar.css">
+    <link rel="stylesheet" href="~/css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/plugins/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/css/plugins/jquery.animatedheadline.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="~/css/flaticon.css">
+    <!-- Magnific Popup Min CSS -->
+    <link rel="stylesheet" href="~/css/magnific-popup.min.css">
+    <!-- Odometer Min CSS -->
+    <link rel="stylesheet" href="~/css/odometer.min.css">
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/css/responsive.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Pagina2.Web</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Hola">Ver</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - Pagina2.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <!-- jQuery Min JS -->
+    <script src="~/js/jquery.min.js"></script>
+    <!-- Popper Min JS -->
+    <script src="~/js/popper.min.js"></script>
+    <!-- Bootstrap Min JS -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- Mixitup Min JS -->
+    <script src="~/js/mixitup.min.js"></script>
+    <!-- Magnific Popup Min JS -->
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <!-- Owl Carousel Min JS -->
+    <script src="~/js/owl.carousel.min.js"></script>
+    <!-- Appear Min JS -->
+    <script src="~/js/jquery.appear.js"></script>
+    <!-- Odometer Min JS -->
+    <script src="~/js/odometer.min.js"></script>
+    <!-- Tilt JS -->
+    <script src="~/js/tilt.jquery.js"></script>
+    <!-- Particles Min JS -->
+    <script src="~/js/particles.min.js"></script>
+    <!-- Parallax Min JS -->
+    <script src="~/js/parallax.min.js"></script>
+    <!-- WOW Min JS -->
+    <script src="~/js/wow.min.js"></script>
+    <!-- Form Validator Min JS -->
+    <script src="~/js/form-validator.min.js"></script>
+    <!-- Contact Form Min JS -->
+    <script src="~/js/contact-form-script.js"></script>
+    <!-- Main JS -->
+    <script src="~/js/main.js"></script>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
